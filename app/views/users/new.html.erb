@@ -1,1 +1,4 @@
 <%= link_to "メールアドレスで登録", new_user_registration_path %>
+
+<%= button_to "Facebookでログイン", user_facebook_omniauth_authorize_path, data: { turbo: false } %>
+<%= button_to "Googleでログイン", user_google_oauth2_omniauth_authorize_path, data: { trubo: false } %>
